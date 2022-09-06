@@ -24,7 +24,7 @@ for (let i=0; i < len; i++)
   
 }
 //Change by zeshan
-/*
+
 
 const productArray = [
     {
@@ -44,11 +44,11 @@ const productArray = [
       }
 
 ]
-let strlen = productArray.length;
+let arraylen = productArray.length;
 text = "";
 let totalProducts=0;
 
-for (let i=0; i < strlen; i++) 
+for (let i=0; i < arraylen; i++) 
 {
    
     totalProducts += productArray[i].quantity;
@@ -59,7 +59,22 @@ for (let i=0; i < strlen; i++)
 }
 console.log ("Total products in stock are :" + totalProducts);
 
-*/
+function findLargest(a, b, c, d) {
+  const arr= [a, b, c, d];
+  let i;
+  let max = arr[0];
+  for (i = 1; i < arr.length; i++) {
+      if (arr[i] > max)
+          max = arr[i];
+  }
+   return max;
+
+}
+
+console.log("the max value is: " + findLargest(10, 200, 40, 30) );
+
+
+
 //console.log(productArray);
 
 //console.log(text);
